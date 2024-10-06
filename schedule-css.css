@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+  html{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  section{
+    height: 100vh;
+    background-color: rgb(125, 17, 28);
+  }
+
+.schedule {
+  text-align: center;
+  font-size: 4em;
+  padding-top: 2rem;
+  }
+
+  h1{
+    font-style: normal;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.3rem;
+  }
+
+  .c-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .c{
+    margin:2rem;
+    padding: 2em;
+    width: 300px;
+    background-color:  #2C2C2C;
+    text-align: center;
+    border-radius: 10px;
+    color:white;
+    position: relative;
+    border: 2px solid #FFAF61;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+  }
+  
+  
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 8;
+    background-color:  #2C2C2C; /* Match section1 theme */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition effect */
+    }
+    
+    .logo {
+      font-size: 1.8rem;
+      text-shadow: 1px 1px 3px red;
+      font-family: 'DM Serif Display', serif;
+      font-weight: bold;
+  }
+
+    img.logo-img {
+      height: 50px;
+  }
+
+  
+/* Mobile Navbar */
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-nav .nav-item {
+  margin-bottom: 10px;
+}
+
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgb(125, 17, 28);; /* Subtle hover effect */
+}
+  .navItems a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: beige;
+    font-weight: 500;
+    text-decoration: none;
+}
+#schedule{
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 2rem;
+  font-weight: 400;
+}
+.title {
+  font-family: 'DM Serif Display', serif;
+  /* text-shadow: 1px 1px 4px rgb(85, 8, 8); */
+  text-shadow: 1px 1px 4px rgb(95, 3, 3);
+
+  opacity: 0.95;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+.footer {
+  background-color: #2C2C2C;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.footer-content {
+  flex-direction: row;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 12px;
+}
+
+.text-section h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.text-section p {
+  color: white;
+  text-align: center;
+}
+
+.text-section a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.socials-section,
+.links-section {
+  width: 25%;
+  margin-top: 24px;
+}
+
+.socials-section h4,
+.links-section h4 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.socials-section p,
+.links-section p {
+  color: white;
+  text-align: center;
+}
+
+.socials-section a,
+.links-section a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.copyright {
+  background-color: black;
+  text-align: center;
+  padding: 12px;
+}
+
+.copyright p {
+  color: white;
+  font-size: 0.875rem;
+}
