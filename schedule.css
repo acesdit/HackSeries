@@ -23,12 +23,6 @@ section {
   background-color: rgb(125, 17, 28);
 }
 
-.schedule {
-  text-align: center;
-  font-size: 4em;
-  padding-top: 2rem;
-}
-
 h1 {
   font-style: normal;
   font-family: 'DM Serif Display', serif;
@@ -37,18 +31,25 @@ h1 {
 .text-highlight-section0{
     align-items:center;
 }
+/* css for schedule section */
+#schedule-section{
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  
+  justify-content: center;
+}
+
 .c-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  margin: 41px;
-  padding: 48px;
+  justify-content: center;  
+  gap: 20px;
 }
 
 .c {
-  margin: 2rem;
   padding: 2em;
-  width: 300px;
+  min-width:300px;
   background-color: #2C2C2C;
   text-align: center;
   border-radius: 10px;
@@ -57,6 +58,7 @@ h1 {
   border: 2px solid #FFAF61;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+/* till here  */
 
 header {
   position: sticky;
@@ -105,9 +107,8 @@ img.logo-img {
   text-decoration: none;
 }
 
-#schedule {
+#scheduleh1 {
   display: flex;
-  justify-items: center;
   justify-content: center;
   color: white;
   padding: 2rem;
@@ -136,15 +137,7 @@ img.logo-img {
   background-color: #2C2C2C;
 }
 
-.c-container {
-  max-width: 1500px;
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-}
+
 
 .footer-content {
   flex-direction: row;
@@ -274,6 +267,9 @@ img.logo-img {
   .title {
     font-size: 2.5rem; /* Slightly smaller for tablets */
   }
+  .c-container{
+    margin: 2rem 5px;
+  }
 
   .footer-content {
     flex-direction: column;
@@ -299,6 +295,10 @@ img.logo-img {
     font-size: 1.75rem; /* Smaller for mobile phones */
   }
 
+  .c-container{
+    margin: 2rem 5px;
+  }
+
   .footer-content {
     padding: 20px;
   }
@@ -307,14 +307,6 @@ img.logo-img {
 @media (max-width: 932px) {
   .c-container {
     margin: 2px;
-  }
-}
-
-@media (max-width: 891px) {
-  .c-container {
-    background-color: #FFAF61;
-    margin: 50px;
-    width: 100%;
   }
 }
 
@@ -348,6 +340,9 @@ img.logo-img {
   .row section::before,
   .row section .icon {
     display: none;
+  }
+  .c-container{
+    margin: 2rem 5px;
   }
   .wrapper .row {
     margin: 10px 0;
