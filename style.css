@@ -1560,9 +1560,17 @@ input[type="reset"]:hover {
 }
 
 /* Media Queries for Responsiveness */
+@media (min-width: 1495px) {
+.slide-wrapper{
+  max-width: 65%;
+
+}
+
+
+}
 @media (max-width: 768px) {
   .slider {
-    aspect-ratio: 4/3;
+    aspect-ratio:9/16;
   }
 
   .slider-nav a {
@@ -1577,7 +1585,7 @@ input[type="reset"]:hover {
   }
 
   .slider {
-    aspect-ratio: 1/1;
+    aspect-ratio: 4/5;
   }
 
   .slider-nav a {
