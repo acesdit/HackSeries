@@ -1470,4 +1470,126 @@ input[type="reset"]:hover {
   white-space: nowrap;
 }
 
+/* CSS For Slider Changes by Prasad Kandekar */
+.slide-header{
+ 
+  font-weight: 900;
+  text-align: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 45px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.img-slider{
+  padding: 2rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.slide-wrapper{
+  /* position: relative;
+  max-width: 48rem;
+  max-width: 0 auto; */
+  position: relative;
+  max-width: 85%;
+  margin: 0 auto;
 
+}
+.slider{
+
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0% ,0%, 0.25);
+  border-radius: 0.5rem;
+
+}
+.slider img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+
+}
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-nav a{
+  width:0.5rem ;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms ;
+}
+.slider-nav a:hover{
+  opacity: 1;
+}
+
+/* Style for the scrollbar */
+.slider {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: black #e0e0e0; /* Custom thumb and track colors */
+}
+
+/* For WebKit browsers like Chrome, Safari, and Edge */
+.slider::-webkit-scrollbar {
+  height: 4px; /* Height of the horizontal scrollbar */
+}
+
+.slider::-webkit-scrollbar-track {
+  background: #d8d1d1; /* Background color of the scrollbar track */
+  border-radius: 30px; /* Rounding the track */
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0); /* Color of the scrollbar thumb */
+  border-radius: 30px; /* Make the thumb rounded */
+  border: 2px solid #e0e0e0; /* Add space between the thumb and track */
+}
+
+.slider::-webkit-scrollbar-thumb:hover {
+  background-color:rgb(23, 23, 23); /* Darker color on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 1495px) {
+.slide-wrapper{
+  max-width: 65%;
+
+}
+
+
+}
+@media (max-width: 768px) {
+  .slider {
+    aspect-ratio:9/16;
+  }
+
+  .slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-slider {
+    padding: 1rem;
+  }
+
+  .slider {
+    aspect-ratio: 4/5;
+  }
+
+  .slider-nav a {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+}
